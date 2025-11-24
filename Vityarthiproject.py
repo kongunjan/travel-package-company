@@ -11,16 +11,11 @@ price_tiers = {
     (8, 10): 550}   
 
 
-
-
-
 language_fees = {
     "english": 1200,
     "hindi": 800,
     "spanish": 1350,
     "french": 1500}
-
-
 
 experinece_fees = {
     "beginner": 800,
@@ -28,10 +23,7 @@ experinece_fees = {
     "expert": 1200}
 
 
-
-
 def get_price_per_place(num_places):
-
     for (first_num, last_num), price in price_tiers.items():
         if first_num <= num_places <= last_num:
             return price
@@ -62,28 +54,18 @@ def main():
     num_places = ask__number_of_places_to_visit()
     per_place_price = get_price_per_place(num_places)
     base_cost = per_place_price * num_places
-
     print(f"\nSelecteed places: {num_places} -> ₹{per_place_price} per place, each = ₹{base_cost}")
     language = choose_from("Choose language for your tourist guide", list (language_fees.keys()))
     language_extraprice_per_guide =   language_fees[language]
     print(f"Language: {language.title()} -> extra ₹{language_extraprice_per_guide}")
-  
-
-
     
     experinece_ = choose_from("choose youwr guide experience", list(experinece_fees.keys()))
     experinece_extra_for_the_guide = experinece_fees[experinece_]
     print(f"guide experience: {experinece_.title()} -> extra ₹{experinece_extra_for_the_guide}")
-
-
-    
     subtotal = base_cost + language_extraprice_per_guide + experinece_extra_for_the_guide
     gst_amount = math.ceil((subtotal * gst_rate) / 100)
     total = round(subtotal + gst_amount, 2)
 
-
-
-    
     print("\n--- Price breakdown ---")
     print(f"Base cost (places) you visited during our service: ₹{base_cost}")
     print(f"Language extra price ooe has to pay :       ₹{language_extraprice_per_guide}")
