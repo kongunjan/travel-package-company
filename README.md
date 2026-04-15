@@ -1,33 +1,52 @@
+# AI-Based Smart Travel Package Price Prediction and Recommendation System
 
-# Travel Package Calculator
-A beginner-friendly Python program that calculates the total cost of a travel package based on number of places, guide language, and guide experience.
-## About This Project
-This Python program helps travelers estimate the total cost of their trip.  
-It calculates the bill based on:
-- The number of places you want to visit
-- The language of your tour guide
-- The experience level of the guide
+## 📌 Project Overview
+The **AI-Based Smart Travel Package Price Prediction and Recommendation System** is a Python-based machine learning project that enhances a basic travel package calculator into an intelligent decision-making system.  
+It predicts the total cost of a travel package, classifies the traveler type, and recommends the best travel package according to the user’s budget and preferences.
 
-The program then shows a final bill in the VS Code terminal.
+This project combines **rule-based pricing** with **Machine Learning algorithms** to provide a smart and user-friendly travel planning experience.
 
-## Features
--project in made in vs code
--i used for while loops and boolean type (True, False0
-- used python modules to calculate summation, dicison and multiplication
-- Easy way to estimate your total travel cost
-- Calculates price based on number of places you visit
-- Includes guide language and experience level in the cost
-- Shows a clean final bill in the VS Code terminal
-- Helps you plan your trip budget more easily
-## How to Run (Beginner-friendly)
+---
 
-### Prerequisites
-- Python 3 installed (recommended: 3.8 or newer)
-- Visual Studio Code (VS Code)
-- Code Runner extension for VS Code (optional — makes running the file easy)
+## 🎯 Features
+- Calculate travel package cost based on:
+  - Number of places to visit
+  - Guide language
+  - Guide experience level
+- Add **GST (12%)** to the final price
+- Predict package price using **Linear Regression**
+- Classify traveler type using **Decision Tree Classifier**
+- Recommend the best package within the user’s budget
+- Generate a synthetic dataset for training
+- Evaluate ML models using:
+  - **MAE (Mean Absolute Error)**
+  - **Accuracy Score**
 
-### Run steps
-1. Open the project folder in VS Code.
-2. Open the main Python file (for example `travel_pricer.py`).
-3. To run with Code Runner: click the ▶️ run button in the top-right of the editor (or press `Ctrl+Alt+N` / `⇧⌘R` depending on your setup).
-4. Or run in the terminal: open VS Code terminal (View → Terminal) and type:
+---
+
+## 🧠 Machine Learning Concepts Used
+- **Supervised Learning**
+- **Regression**
+- **Classification**
+- **Feature Encoding (One-Hot Encoding)**
+- **Synthetic Dataset Generation**
+- **Model Evaluation**
+
+---
+
+## 🛠 Technologies Used
+- **Python 3**
+- **Pandas**
+- **Scikit-learn**
+- **Math**
+- **Random**
+
+---
+
+## 📂 Project Structure
+```bash
+AI-Travel-Package-System/
+│
+├── main.py              # Main Python source code
+├── README.md            # Project documentation
+└── requirements.txt     # Required Python libraries
